@@ -138,16 +138,16 @@ themeToggle.addEventListener('keydown', (e) => {
     }
 });
 
-// Print functionality
-function addPrintButton() {
-    const printBtn = document.createElement('button');
-    printBtn.innerHTML = '<i class="fas fa-print"></i>';
-    printBtn.className = 'print-button';
-    printBtn.setAttribute('aria-label', 'Print resume');
-    printBtn.style.cssText = `
+// Download functionality
+function addDownloadButton() {
+    const downloadBtn = document.createElement('button');
+    downloadBtn.innerHTML = '<i class="fas fa-download"></i>';
+    downloadBtn.className = 'download-button';
+    downloadBtn.setAttribute('aria-label', 'Download resume');
+    downloadBtn.style.cssText = `
         position: fixed;
         bottom: 2rem;
-        right: 5rem;
+        right: 6.5rem;
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -161,50 +161,34 @@ function addPrintButton() {
         z-index: 1000;
     `;
 
-    printBtn.addEventListener('click', () => {
-        window.print();
+    downloadBtn.addEventListener('click', () => {
+        // Create a temporary anchor element to trigger download
+        const link = document.createElement('a');
+        link.href = 'anand_resume.pdf';
+        link.download = 'anand_jangid.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     });
 
-    printBtn.addEventListener('mouseenter', function() {
+    downloadBtn.addEventListener('mouseenter', function() {
         this.style.transform = 'scale(1.1)';
         this.style.background = 'var(--secondary-color)';
     });
 
-    printBtn.addEventListener('mouseleave', function() {
+    downloadBtn.addEventListener('mouseleave', function() {
         this.style.transform = 'scale(1)';
         this.style.background = 'var(--primary-color)';
     });
 
-    document.body.appendChild(printBtn);
+    document.body.appendChild(downloadBtn);
 }
 
-// Add print button on desktop
+// Add download button on desktop
 if (window.innerWidth > 768) {
-    addPrintButton();
+    addDownloadButton();
 }
 
-// Typing effect for name (optional - commented out by default)
-/*
-function typeEffect(element, text, speed = 100) {
-    let i = 0;
-    element.textContent = '';
-    const timer = setInterval(() => {
-        if (i < text.length) {
-            element.textContent += text.charAt(i);
-            i++;
-        } else {
-            clearInterval(timer);
-        }
-    }, speed);
-}
-
-// Uncomment to enable typing effect
-// window.addEventListener('load', () => {
-//     const nameElement = document.querySelector('.name');
-//     const originalText = nameElement.textContent;
-//     typeEffect(nameElement, originalText, 100);
-// });
-*/
 
 // Add Easter egg - Konami code
 let konamiCode = [];
