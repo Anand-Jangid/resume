@@ -9,27 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Animated Background Effects -->
-    <canvas id="matrix-canvas"></canvas>
-    <div class="code-background"></div>
-
     <div class="container">
         <!-- Header Section -->
         <header class="header">
-            <div class="terminal-header">
-                <span class="terminal-dot red"></span>
-                <span class="terminal-dot yellow"></span>
-                <span class="terminal-dot green"></span>
-            </div>
             <div class="profile-image-container">
-                <img src="Coding.jpeg" alt="Anand Jangid" class="profile-image">
-                <div class="status-indicator"></div>
+                <img src="profile_pic.png" alt="Anand Jangid" class="profile-image">
             </div>
-            <h1 class="name">
-                <span class="typed-text">$ whoami</span>
-                <br>
-                <span class="glitch" data-text="Anand Jangid">Anand Jangid</span>
-            </h1>
+            <h1 class="name">Anand Jangid</h1>
             <p class="tagline">
                 <i class="fas fa-code"></i> Full Stack Developer | <i class="fas fa-brain"></i> Problem Solver | <i class="fas fa-rocket"></i> Tech Enthusiast
             </p>
@@ -40,14 +26,14 @@
                 <a href="mailto:jangidme88@gmail.com" class="contact-item">
                     <i class="fas fa-envelope"></i> jangidme88@gmail.com
                 </a>
+                <a href="https://leetcode.com/anandOENA" target="_blank" class="contact-item">
+                    <i class="fas fa-code"></i> Leetcode
+                </a>
                 <a href="https://github.com/Anand-Jangid" target="_blank" class="contact-item">
-                    <i class="fab fa-github"></i> Anand-Jangid
+                    <i class="fab fa-github"></i> GitHub
                 </a>
                 <a href="https://linkedin.com/in/anand-jangid" target="_blank" class="contact-item">
-                    <i class="fab fa-linkedin"></i> anand-jangid
-                </a>
-                <a href="https://leetcode.com/anandOENA" target="_blank" class="contact-item">
-                    <i class="fas fa-code"></i> anandOENA
+                    <i class="fab fa-linkedin"></i> Linkedin
                 </a>
             </div>
         </header>
@@ -57,8 +43,26 @@
             <h2 class="section-title">
                 <i class="fas fa-user"></i> Profile
             </h2>
+            <div class="profile-stats">
+                <div class="profile-stat">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="profile-stat">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Companies</span>
+                </div>
+                <div class="profile-stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+                <div class="profile-stat">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+            </div>
             <p class="profile-text">
-                A software developer with 2+ years of experience, I have a strong foundation in Data Structures and Algorithms (DSA) for solving complex problems. I specialize in developing RESTful APIs using Node.js, Express.js, PostgreSQL, and Sequelize, as well as working with Spring Boot, Hibernate, and JPA. I have experience in microservices architectures, Low-Level Design (LLD), and Flutter development. I am passionate about tackling technical challenges and contributing to impactful projects.
+                A software developer with <strong>3+ years of experience</strong>, I have a strong foundation in <strong>Data Structures and Algorithms (DSA)</strong> for solving complex problems. I specialize in developing <strong>RESTful APIs and data pipelines</strong> using Node.js, Express.js, PostgreSQL, MongoDB, and MySQL, as well as working with Spring Boot, Hibernate, and JPA. I have experience in <strong>microservices architectures</strong>, data migration pipelines, orchestration services, Low-Level Design (LLD), and Flutter development. I am passionate about tackling technical challenges and contributing to impactful projects.
             </p>
         </section>
 
@@ -95,12 +99,14 @@
                     <div class="skill-tags">
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Azure</span>
                         <span class="skill-tag">AWS</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3><i class="fas fa-database"></i> Databases</h3>
                     <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
                         <span class="skill-tag">PostgreSQL</span>
                         <span class="skill-tag">MongoDB</span>
                         <span class="skill-tag">SQLite</span>
@@ -159,19 +165,50 @@
             <div class="employment-item">
                 <div class="employment-header">
                     <div>
-                        <h3>Cubastion Consulting, Gurugram</h3>
+                        <h3>Skeps <span class="company-location"><i class="fas fa-map-marker-alt"></i> Remote</span></h3>
+                        <p class="job-title">Software Developer</p>
+                    </div>
+                    <p class="date"><span class="badge-current">Current</span> Jun 2025–Present</p>
+                </div>
+                <ul class="employment-list">
+                    <li>Designed and developed <strong>data migration pipelines</strong> in the <strong>Data Warehouse</strong> service, ingesting data from MongoDB and persisting it into MySQL for structured analytics and reporting. Leveraged <strong>database cursors</strong> to stream data incrementally instead of loading entire datasets into memory, significantly reducing memory overhead.</li>
+                    <li>Worked on the <strong>Data Lake</strong> service, building pipelines that extract data from MySQL and load it into the data lake using <strong>cursor-based streaming</strong> for efficient, memory-safe data processing.</li>
+                    <li>Developed and maintained <strong>orchestrator services</strong> that manage end-to-end flows for customers, merchants, and lenders on the Skeps lending portal.</li>
+                    <li>Worked with Node.js, MongoDB, MySQL, Docker, and Azure to build and deploy scalable backend services.</li>
+                </ul>
+                <div class="employment-tags">
+                    <span class="employment-tag">Node.js</span>
+                    <span class="employment-tag">MongoDB</span>
+                    <span class="employment-tag">MySQL</span>
+                    <span class="employment-tag">Docker</span>
+                    <span class="employment-tag">Azure</span>
+                </div>
+            </div>
+
+            <div class="employment-item">
+                <div class="employment-header">
+                    <div>
+                        <h3>Cubastion Consulting <span class="company-location"><i class="fas fa-map-marker-alt"></i> Gurugram</span></h3>
                         <p class="job-title">Senior Associate Consultant</p>
                     </div>
-                    <p class="date">Oct 2022–Present</p>
+                    <p class="date">Oct 2022–May 2025</p>
                 </div>
-                <p class="employment-description">
-                    Currently working as a Senior Associate Consultant, with progressive experience in backend development, system architecture, and microservices. Key contributions include:
-                </p>
                 <ul class="employment-list">
-                    <li>Leading projects and delivering innovative solutions with a focus on scalable backend systems.</li>
-                    <li>Developing and maintaining microservices and REST APIs for client applications.</li>
-                    <li>Gaining hands-on experience in mobile application development using the Flutter framework.</li>
+                    <li>Led projects and delivered innovative solutions with a focus on <strong>scalable backend systems</strong>.</li>
+                    <li>Developed and maintained <strong>microservices and REST APIs</strong> for client applications.</li>
+                    <li>Gained hands-on experience in mobile application development using the <strong>Flutter framework</strong>.</li>
+                    <li><strong>Copper &amp; BitGo</strong>: Integrated Copper and BitGo with CLST as third-party services for digital asset transactions. Developed separate <strong>microservices</strong> for each, with REST APIs and webhooks to ensure efficient and secure communication.</li>
+                    <li><strong>CLST</strong>: Developed REST APIs using Node.js with Express and PostgreSQL, leveraging <strong>Sequelize ORM</strong> for database interactions. Worked on microservices architecture to enhance modularity and scalability.</li>
+                    <li><strong>Voltas</strong>: Developed a cross-platform mobile application using <strong>Flutter</strong>. Implemented UI, managed network requests via HTTP package, built background services, integrated local and push notifications using FlutterLocalNotification, used Sqflite for local storage, and incorporated MapMyIndia for maps.</li>
                 </ul>
+                <div class="employment-tags">
+                    <span class="employment-tag">Node.js</span>
+                    <span class="employment-tag">Express.js</span>
+                    <span class="employment-tag">PostgreSQL</span>
+                    <span class="employment-tag">Sequelize</span>
+                    <span class="employment-tag">Flutter</span>
+                    <span class="employment-tag">Microservices</span>
+                </div>
             </div>
         </section>
 
@@ -180,21 +217,6 @@
             <h2 class="section-title">
                 <i class="fas fa-project-diagram"></i> Projects
             </h2>
-
-            <div class="project-item">
-                <h3><i class="fas fa-coins"></i> Copper & BitGo</h3>
-                <p>Integrated Copper and BitGo with CLST as third-party services for digital asset transactions. Developed separate microservices for Copper and BitGo, each with REST APIs and webhooks to ensure efficient and secure communication.</p>
-            </div>
-
-            <div class="project-item">
-                <h3><i class="fas fa-network-wired"></i> CLST</h3>
-                <p>Developed REST APIs using Node.js with Express and PostgreSQL, leveraging Sequelize ORM for database interactions. Worked on microservices architecture to enhance modularity and scalability.</p>
-            </div>
-
-            <div class="project-item">
-                <h3><i class="fas fa-mobile-alt"></i> Voltas</h3>
-                <p>Developed a cross-platform mobile application for Voltas using the Flutter framework. Implemented the UI and managed network requests using the HTTP package. Built background services and integrated both local and push notifications using FlutterLocalNotification. Utilized Sqflite for local database storage and incorporated MapMyIndia to display maps within the application.</p>
-            </div>
 
             <div class="project-item">
                 <h3><i class="fas fa-wallet"></i> Money Tracker</h3>
