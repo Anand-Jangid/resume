@@ -114,6 +114,31 @@ body {
     color: var(--accent);
 }
 
+.download-resume {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.25rem;
+    background: transparent;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.download-resume:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+body.dark-mode .download-resume:hover {
+    color: #0f172a;
+}
+
 /* Section */
 .section {
     background: var(--bg-card);

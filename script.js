@@ -27,54 +27,6 @@ themeToggle.addEventListener('keydown', (e) => {
     }
 });
 
-// Download Button
-function addDownloadButton() {
-    const downloadBtn = document.createElement('button');
-    downloadBtn.innerHTML = '<i class="fas fa-download"></i>';
-    downloadBtn.setAttribute('aria-label', 'Download resume');
-    downloadBtn.style.cssText = `
-        position: fixed;
-        bottom: 1.5rem;
-        right: 5.5rem;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: #2563eb;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 0.95rem;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        transition: all 0.2s ease;
-        z-index: 1000;
-    `;
-
-    downloadBtn.addEventListener('click', () => {
-        const link = document.createElement('a');
-        link.href = 'anand_resume.pdf';
-        link.download = 'anand_jangid.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    });
-
-    downloadBtn.addEventListener('mouseenter', function () {
-        this.style.transform = 'scale(1.05)';
-        this.style.background = '#1e3a5f';
-    });
-
-    downloadBtn.addEventListener('mouseleave', function () {
-        this.style.transform = 'scale(1)';
-        this.style.background = '#2563eb';
-    });
-
-    document.body.appendChild(downloadBtn);
-}
-
-if (window.innerWidth > 768) {
-    addDownloadButton();
-}
-
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
