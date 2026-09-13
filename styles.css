@@ -11,18 +11,6 @@
     --transition: all 0.2s ease;
 }
 
-body.dark-mode {
-    --primary: #93c5fd;
-    --accent: #60a5fa;
-    --text-primary: #f9fafb;
-    --text-secondary: #9ca3af;
-    --bg-page: #111827;
-    --bg-card: #1f2937;
-    --bg-muted: #111827;
-    --border: #374151;
-    --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -133,10 +121,6 @@ body {
 .download-resume:hover {
     background: var(--accent);
     color: #fff;
-}
-
-body.dark-mode .download-resume:hover {
-    color: #0f172a;
 }
 
 /* Section */
@@ -420,11 +404,6 @@ body.dark-mode .download-resume:hover {
     vertical-align: middle;
 }
 
-body.dark-mode .badge-current {
-    background: #14532d;
-    color: #86efac;
-}
-
 .employment-tags {
     display: flex;
     flex-wrap: wrap;
@@ -442,11 +421,6 @@ body.dark-mode .badge-current {
     font-size: 0.75rem;
     font-weight: 600;
     border: 1px solid #bfdbfe;
-}
-
-body.dark-mode .employment-tag {
-    background: #1e3a5f;
-    border-color: #1d4ed8;
 }
 
 /* Projects */
@@ -490,29 +464,6 @@ body.dark-mode .employment-tag {
     padding: 1.5rem;
     color: var(--text-secondary);
     font-size: 0.85rem;
-}
-
-/* Theme Toggle */
-.theme-toggle {
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: var(--accent);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 0.95rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    transition: var(--transition);
-    z-index: 1000;
-}
-
-.theme-toggle:hover {
-    background: var(--primary);
-    transform: scale(1.05);
 }
 
 /* Scrollbar */
@@ -576,12 +527,6 @@ body.dark-mode .employment-tag {
         grid-template-columns: 1fr;
     }
 
-    .theme-toggle {
-        bottom: 1rem;
-        right: 1rem;
-        width: 36px;
-        height: 36px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -607,9 +552,6 @@ body.dark-mode .employment-tag {
         page-break-inside: avoid;
     }
 
-    .theme-toggle {
-        display: none;
-    }
 }
 
 /* Accessibility */
