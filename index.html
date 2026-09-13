@@ -225,7 +225,11 @@
 
             <div class="project-item">
                 <h3><i class="fas fa-cart-shopping"></i> E-commerce Platform</h3>
-                <p>Built an E-commerce application using Spring Boot. Utilized Spring JPA for database queries and PostgreSQL as the database. Developed REST APIs with the Spring framework to enable product catalog browsing, cart management, and checkout operations. Implemented JWT-based authentication and authorization to secure the application and restrict access to authorized users.</p>
+                <ul class="employment-list">
+                    <li>Designed a <strong>microservices-based</strong> e-commerce platform with independent <strong>User</strong>, <strong>Product</strong>, <strong>Cart</strong>, and <strong>Order</strong> services (Spring Boot), each owning its own database and communicating via REST APIs and <strong>RabbitMQ</strong>.</li>
+                    <li>Built the <strong>Order Service</strong> to orchestrate order placement by aggregating cart contents and current product prices, computing the final amount, and storing a purchase-time price snapshot per item for historical accuracy.</li>
+                    <li>Applied <strong>Low-Level Design (LLD)</strong> and <strong>Core Java</strong>/<strong>OOP</strong> principles (encapsulation, inheritance, polymorphism, SOLID) to enforce clear service boundaries and maintainable domain models.</li>
+                </ul>
             </div>
         </section>
 
